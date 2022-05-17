@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da velha</title>
+</head>
+<body>
+    <header id="titulo" class="alinha">
+        <div class="conteiner">
+            <p>Jogos da velha</p>
+            <p>Escolha entre X ou 0</p>
+            <input class="btn01" type="button" value="x" onclick="decide(0)">
+            <input class="btn01" type="button" value="O" onclick="decide(1)">
+            <input class="iniciar" type="button" value="Iniciar jogo contra CPU" onclick="iniciaGame()">
+        </div>
+    </header>
+    <main id="game" class="alinha some">
+        <div id="mensagem" class="mensagem player some">
+            <h1>Vitoria</h1>
+        </div>
+        <div id="Jogo" class="conteiner">
+            <div id="menuTopo">
+                <input class="btn02 right" type="button" value="Recomecar" onclick="recomecar()">
+                <input class="btn02 left" type="button" value="Voltar" onclick="voltar()">
+            </div>
+            <div class="ajustegeral">
+                <input id="1" class="botaovelha" type="button" value=" " onclick="selecionado('1')">
+                <input id="2" class="botaovelha" type="button" value=" " onclick="selecionado('2')"> 
+                <input id="3" class="botaovelha" type="button" value=" " onclick="selecionado('3')">
+            </div>
+            <div>
+                <input id="4" class="botaovelha" type="button" value=" " onclick="selecionado('4')">
+                <input id="5" class="botaovelha" type="button" value=" " onclick="selecionado('5')"> 
+                <input id="6" class="botaovelha" type="button" value=" " onclick="selecionado('6')">
+            </div>
+            <div>
+                <input id="7" class="botaovelha" type="button" value=" " onclick="selecionado('7')">
+                <input id="8" class="botaovelha" type="button" value=" " onclick="selecionado('8')"> 
+                <input id="9" class="botaovelha" type="button" value=" " onclick="selecionado('9')">
+            </div>
+            <div id="menuTopo">
+                <input id="placarMaquina" class="placar maquina" type="button" value="Maquina: 0">
+                <input id="placar" class="placar" type="button" value="Partidas: 0">
+                <input id="placarPlayer" class="placar  player" type="button" value="Player: 0">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Murilo Bovati (_M_)</p>
+    </footer>
+    <script src="Code.js"></script>
+</body>
+</html>

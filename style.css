@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: rgba(116, 116, 116, 0.548);
+}
+
+header > div > p {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgba(250, 235, 215, 0.699);
+}
+
+.some{
+    display: none;
+}
+
+
+.alinha{
+    margin-top: 250px;
+}
+/*Configuracao do conteiner do jogo*/
+.conteiner{
+    margin: auto;
+    background-color: rgb(41, 41, 41);
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.719);
+}
+/*Botoes do inicio do game*/
+.btn01{
+    padding-top: 0;
+    width: 150px;
+    height: 70px;
+    margin:  10px;
+    border-radius: 10px;
+    font-size: 3em; 
+    background-color: rgb(22, 22, 29);
+    border: none;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.726);
+    color: rgb(62, 184, 78);
+    font-weight: bold;
+
+}
+.btn01:focus {
+    box-shadow: none;
+    color: rgb(192, 63, 63);
+    font-weight: bold;
+    
+}
+
+/*Botao iniciar do jogo*/
+.iniciar{
+    text-transform: uppercase;
+    background-color: goldenrod;
+    width: 350px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.445);
+}
+
+.iniciar:active{
+    box-shadow: none;
+}
+
+/*Botao de escolha durante o jogo*/
+.botaovelha {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 5px;
+    border: none;
+    background-color: rgb(87, 87, 87);
+    box-shadow: 3px 3px 2px black;
+    cursor: pointer;
+    font-size: 3em;
+    transition: 0.2s;
+}
+
+.botaovelha:active{
+    box-shadow: none;
+}
+
+/*Classes para modificar as cores*/
+.maquina {
+    color: rgb(192, 63, 63);
+    font-weight: bold;
+}
+.player{
+    color: rgb(45, 204, 67);
+    font-weight: bold;
+}
+
+/*configuracao de botoes recomecar e voltar*/
+.btn02{
+    width: 100px;
+    color: rgb(62, 184, 78);
+    font-weight: bold;
+    background-color: rgb(87, 87, 87);
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 35px;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    box-shadow: 3px 3px 2px black;
+}
+
+.btn02:active{
+    box-shadow: none;
+}
+
+.right{
+    float: right;
+    margin-right: 40px;
+}
+
+.left{
+    float: left;
+}
+
+/*Configuracao placar de vitorias derrotas e partidas*/
+.placar{
+    background-color: rgb(138, 136, 136);
+    width: 100px;
+    margin: 5px;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.mensagem{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 60%;
+    font-size: 2em;
+    background-color: rgba(138, 136, 136, 0.315);
+}
+
+footer {
+    margin-top: 50px;
+    color: white;
+}
+
+footer > p {
+    color: rgb(41, 41, 41);
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    
+}
+
+
