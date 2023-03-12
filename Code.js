@@ -67,7 +67,7 @@ class JogoDaVelha{
     //controle de selecao do botao
     selecionado(valor, quemJoga, valorJogador){
         let selecionado = document.getElementById(valor)
-        if(selecionado.value == ' ' || !this.fimGame){
+        if(selecionado.value == ' ' && !this.fimGame){
             selecionado.classList = `botaovelha ${quemJoga}`
             selecionado.value = valorJogador
             this.vezMaquina = true
@@ -152,7 +152,7 @@ class JogoDaVelha{
 
     //controle de aviso de vitoria do jogo
     avisoVitoria(vencedor){
-        jogo.fimGame = true
+        this.fimGame = true
         let mensagem = document.getElementById('mensagem')
         if(vencedor == 'player'){
             jogo.vitorias ++
