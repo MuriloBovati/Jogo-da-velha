@@ -26,7 +26,7 @@ O cliente disse que está entediado no seu tempo livre e que é um grande fã do
 </div>
 
 ## 📱 Layout Mobile
-<div styled="width:200px;" align="center">
+<div style="width: 300px;" align="center">
 
 ![Mobile](https://user-images.githubusercontent.com/93354240/224573982-d3ec6aac-70ef-4ce5-9f00-29570b45b749.jpeg)
 
