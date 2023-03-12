@@ -22,6 +22,7 @@ header > div > p {
 .alinha{
     margin-top: 150px;
 }
+
 /*Configuracao do conteiner do jogo*/
 .conteiner{
     margin: auto;
@@ -32,6 +33,12 @@ header > div > p {
     border-radius: 10px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.719);
 }
+
+.container-button{
+    display: block;
+}
+
+
 /*Botoes do inicio do game*/
 .btn01{
     padding-top: 0;
@@ -119,14 +126,6 @@ header > div > p {
     box-shadow: none;
 }
 
-.right{
-    float: right;
-    margin-right: 40px;
-}
-
-.left{
-    float: left;
-}
 
 /*Configuracao placar de vitorias derrotas e partidas*/
 .placar{
@@ -163,4 +162,11 @@ footer > p {
     
 }
 
+/* Responsivo */
+
+@media (max-width: 980px) {
+    .conteiner{
+        width: 350px;
+    }
+}
 

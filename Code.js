@@ -104,11 +104,12 @@ let bloco09 = document.getElementById('9').value
         return true
     }
 }
+
 //verifica empate
 function verificaEmpate(){
     let mensagem = document.getElementById('mensagem')
     if(jogo.jogada == 9){
-        if(!verificaVitoria(jogo.valorMaquina) ||
+        if(!verificaVitoria(jogo.valorMaquina) &&
            !verificaVitoria(jogo.valorPlayer) ){
             mensagem.classList = 'mensagem player'
             mensagem.innerHTML = '<h1>Empate</h1>'
@@ -119,7 +120,6 @@ function verificaEmpate(){
 
 //Recomeca o game
 function recomecar(){
-    jogo.partidas ++
     let mensagem = document.getElementById('mensagem')
     mensagem.classList = 'some'
     jogo.jogada = 1
@@ -152,6 +152,10 @@ function voltar(){
     telaInicioGame.className = 'alinha'
     telaGame.className = 'alinha some'
     recomecar()
+    jogo.partidas = 0
+    jogo.vitorias = 0
+    jogo.derrotas = 0
+    atualizaPlacar()
 }
 
 //Programacao da maquina
@@ -181,6 +185,7 @@ function avisoVitoria(vencedor){
         mensagem.classList = 'mensagem maquina'
         mensagem.innerHTML = '<h1>Derrota</h1>'
     }
+    jogo.partidas ++
     atualizaPlacar()
 }
 
