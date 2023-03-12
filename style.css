@@ -34,6 +34,13 @@ header > div > p {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.719);
 }
 
+.menuTopo{
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    margin: auto;
+}
+
 .container-button{
     display: block;
 }
@@ -115,7 +122,6 @@ header > div > p {
     border: none;
     padding: 5px;
     margin: 5px;
-    margin-left: 35px;
     border-radius: 5px;
     height: 40px;
     width: 100px;
