@@ -2,7 +2,7 @@
 <div align="center">
 
 # Jogo-da-velha
-Jogo da velha feito em html css javascript
+
 </div>
 
 ## 👨‍🔬 Objetivo
