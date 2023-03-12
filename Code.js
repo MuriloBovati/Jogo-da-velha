@@ -6,6 +6,7 @@ class JogoDaVelha{
         this.vitorias = 0
         this.derrotas = 0
         this.fimGame = false
+        this.vezMaquina = false
         this.jogada = 1
     }
 
@@ -58,7 +59,7 @@ class JogoDaVelha{
     //controle de fluxo do jogo
     eventGame(valor){
         this.selecionado(valor, "player", this.valorPlayer)
-        if(this.jogada <= 9 && !this.fimGame){
+        if(this.jogada <= 9 && !this.fimGame && this.vezMaquina){
             this.jogadaMaquina()
         }
         this.verificaEmpate()
@@ -75,6 +76,8 @@ class JogoDaVelha{
             if(this.verificaVitoria(valorJogador)){
                 this.avisoVitoria(quemJoga)
             }
+        } if(quemJoga == "maquina"){
+            this.vezMaquina = false
         }
     }
 
