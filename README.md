@@ -19,8 +19,18 @@ Projeto com finalidade de desenvolvimento pessoal.
 O cliente disse que está entediado no seu tempo livre e que é um grande fã do jogo da velha, ele deseja uma aplicação onde ele pode jogar sozinho, onde apareça a quantidade de vitórias da máquina, as do jogador e a quantidade de partidas jogada.
 
 ## 🖥 Layout Web
+<div align="center">
+
+  
+  
+</div>
 
 ## 📱 Layout Mobile
+<div styled="width:200px;" align="center">
+
+![Mobile](https://user-images.githubusercontent.com/93354240/224573982-d3ec6aac-70ef-4ce5-9f00-29570b45b749.jpeg)
+
+</div>
 
 # 🛠 Tecnologias utilizadas
 ## 👩‍💻 Front end
