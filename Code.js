@@ -62,7 +62,6 @@ class JogoDaVelha{
             this.jogadaMaquina()
         }
         this.verificaEmpate()
-        console.log(this.jogada)
     }
 
     //controle de selecao do botao
@@ -80,8 +79,7 @@ class JogoDaVelha{
     }
 
     //Inteligencia da maquina
-    jogadaMaquina(){
-        console.log("maquina jogando")    
+    jogadaMaquina(){    
         while(true){
             let escolha = Math.floor(Math.random() * (10 - 1) + 1)
             let bloco = document.getElementById(String(escolha))
@@ -170,7 +168,6 @@ class JogoDaVelha{
     }
 
 }
-
 //Instancia o jogo
 let jogo = new JogoDaVelha
 
